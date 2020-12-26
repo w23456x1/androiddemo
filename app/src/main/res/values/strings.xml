@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">2018110449_武雄</string>
+    <string name="one">One</string>
+    <string name="two">two</string>
+    <string name="number_one">Number One:</string>
+    <string name="number_two">Number Two:</string>
+    <string name="button">Button</string>
+    <string name="result_is">Result is :</string>
+    <string name="add">Add</string>
+</resources>
