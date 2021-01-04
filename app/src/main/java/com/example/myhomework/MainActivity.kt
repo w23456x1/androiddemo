@@ -13,7 +13,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.myhomework.ui.Chat.ChatFragment
 import com.example.myhomework.ui.Music.MusicFragment
 import com.example.myhomework.ui.game.gameFragment
 import com.example.myhomework.ui.watch.WatchFragment
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     val fragment2 = gameFragment()
     val fragment3 = WeatherFragment()
     val fragment4 = WatchFragment()
-    val fragment5 = ChatFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -48,9 +46,6 @@ class MainActivity : AppCompatActivity() {
                     .commit()
                 R.id.navigation_watch -> supportFragmentManager.beginTransaction()
                     .replace(R.id.nav_host_fragment,fragment4)
-                    .commit()
-                R.id.navigation_chat -> supportFragmentManager.beginTransaction()
-                    .replace(R.id.nav_host_fragment,fragment5)
                     .commit()
             }
             true
